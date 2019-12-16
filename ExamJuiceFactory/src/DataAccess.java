@@ -23,9 +23,9 @@ public class DataAccess {
 		ResultSet rs = null;
 
 		try {
-			String sql = "INSERT INTO orders (orangeQ, appleQ,  grapeQ, totalCost) VALUES(?, ?, ?, ?);";
+			String sql = "INSERT INTO orders (orangeQ, appleQ, grapeQ, totalCost) VALUES (?, ?, ?, ?);";
 
-			// initially set the main student information
+			
 
 			ps = conn.prepareStatement(sql);
 			ps.setInt(1, oq);

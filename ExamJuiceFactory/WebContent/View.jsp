@@ -12,25 +12,34 @@
 <
 link
 
+
  
+
 
 rel
 
 
+
+
 ="
 stylesheet
+
+
 "
-
- 
-
 href
+
+
 
 
 ="
 style
 
 
+
+
 .css
+
+
 
 
 "
@@ -42,14 +51,14 @@ style
 	<br> Here is your order:
 	<br>
 
-	<div class="fruit">
-		<c:forEach var="item" items="${fruitList}">
 
+	<c:forEach var="item" items="${fruitList}">
+		<div class="fruit">
 			<img src="images/${item.name}.png">
+		</div>
 
+	</c:forEach>
 
-		</c:forEach>
-	</div>
 	Your total is: ${totalCost}
 	<br>
 	<a href="index.html">Order More Fruits - click here</a>

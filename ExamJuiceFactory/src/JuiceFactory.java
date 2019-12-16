@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/JuiceFactory")
 public class JuiceFactory extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	List<Fruit> fruitList;
+	
 
 	/**
 	 * Default constructor.
@@ -33,6 +33,7 @@ public class JuiceFactory extends HttpServlet {
 	@SuppressWarnings("unchecked")
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		List<Fruit> fruitList;
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		HttpSession session = request.getSession();
